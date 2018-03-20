@@ -34,6 +34,7 @@ class MadLibForm extends Component {
         super(props)
 
         this.state = {
+            completedForm: false,
             color: "",
             pluralNoun: "",
             adjectiveOne: "",
@@ -51,8 +52,14 @@ class MadLibForm extends Component {
         console.log(`value for input ${props.inputTitle} is: ${event.target.value}`)
         this.setState({[props.inputTitle]: event.target.value});
         console.log(`value for state ${props.inputTitle} is: ${this.state[props.inputTitle]}`)
-        }.bind(this);
+       }.bind(this);
     }
+
+    handleSubmit = function(event) {
+        this.setState({completedForm: true});
+        event.preventDefault();
+    }.bind(this);
+
 
     render() { 
 
@@ -72,13 +79,21 @@ class MadLibForm extends Component {
         return (
            <div className="card-wrapper">
                 <Card>
-                   <Row style={{textAlign: 'center', color: 'white'}}>
-                        {
-                                _.map(this.inputData, (data, indexKey) => {
-                                    return <MadlibInput key={indexKey} index={indexKey + 1} state={data.state} placeholder={data.placeholder} onChange={this.handleChange({inputTitle: data.prop})} />
-                                 }) 
-                        }
-                  </Row>
+                    <form onSubmit={this.handleSubmit} id="madlib-form">
+                    <Row style={{textAlign: 'center', color: 'white'}}>
+                            {
+                                    _.map(this.inputData, (data, indexKey) => {
+                                       return <MadlibInput key={indexKey} index={indexKey + 1} state={data.state} placeholder={data.placeholder} onChange={this.handleChange({inputTitle: data.prop})} />
+                                   }) 
+                            }
+                    </Row>
+                    <Row>
+
+                    </Row>
+                        <Col nd="12" className="button wrapper">
+                        <input type="submit" className="generate-button" value="Generate Mad Lib " />
+                        </Col>
+                  </form>
                 </Card>
           </div>
         );
