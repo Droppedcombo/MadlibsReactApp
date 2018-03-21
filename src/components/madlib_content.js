@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class MadlibContent extends Component {
     render() {
+        this.count = 1
         const data = this.props.data;
         return (
             <div className={data.completedForm ? "showContent" : "hidecontent"}>
@@ -17,6 +18,14 @@ class MadlibContent extends Component {
             </div> 
         )       
     }
+    renderLabel = function(state) {
+        return (
+        <span>
+            <label className="black-label">{this.count++}</label> <b className="bold-text">{state}</b>
+        </span>
+        )
+    }.bind(this);
+
 }
 
 export default MadlibContent;

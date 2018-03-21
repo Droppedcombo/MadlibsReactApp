@@ -45,6 +45,15 @@ class MadLibForm extends Component {
             nounOne: "",
             numberOne: "",
             numberTwo: "",
+            completedForm: false,
+            color: '',
+            pluralNoun: '',
+            adjectiveOne: '',
+            celebrityOne: '',
+            adjectiveTwo: '',
+            nounOne: '',
+            numberOne: '',
+            numberTwo: '',
 
         }
     }
@@ -87,6 +96,16 @@ class MadLibForm extends Component {
     render() { 
 
         this.inputData = [
+            {placeholder: 'Color', prop: 'color', state: this.state.color},
+            {placeholder: 'Noun (Plural)', prop: 'pluralNoun', state: this.state.pluralNoun},
+            {placeholder: 'Adjective', prop: 'adjectiveOne', state: this.state.adjectiveOne},
+            {placeholder: 'Celebrity', prop: 'celebrityOne', state: this.state.celebrityOne},
+
+            {placeholder: 'Adjective', prop: 'adjectiveTwo', state: this.state.adjectiveTwo},
+            {placeholder: 'Noun (Plural)', prop: 'nounOne', state: this.state.nounOne},
+            {placeholder: 'Number', prop: 'numberOne', state: this.state.numberOne},
+            {placeholder: 'Number', prop: 'numberTwo', state: this.state.numberTwo},
+          
             {placeholder: 'Color', prop: 'color', state: this.state.color},
             {placeholder: 'Noun (Plural)', prop: 'pluralNoun', state: this.state.pluralNoun},
             {placeholder: 'Adjective', prop: 'adjectiveOne', state: this.state.adjectiveOne},
