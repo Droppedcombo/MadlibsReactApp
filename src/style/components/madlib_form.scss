@@ -62,4 +62,11 @@ input {
     text-align: center;
 }
 
+input:focus,
+button:focus {
+    outline: none;
+}
+
+
+
 
