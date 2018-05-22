@@ -5,7 +5,7 @@ class MadlibContent extends Component {
         this.count = 1
         const data = this.props.data;
         return (
-            <div className={data.completedForm ? "showContent" : "hidecontent"}>
+            <div className={data.completedForm ? "showContent" : "hideContent"}>
             <div className="content-wrapper">
                     Ladies and gentlemen, this is {this.renderLabel(data.color)} Barber, your sportscaster,  bringing you the last inning of the game 
                     between the Cleveland {this.renderLabel(data.pluralNoun)} and the {this.renderLabel(data.adjectiveOne)} Yankees. {this.renderLabel(data.celebrityOne)} is 

@@ -28,45 +28,41 @@ input {
 }
 
 .input-description {
-    color: $mainGrey;
+    color: #b3b3b3;
     font-weight: 300;
     font-size: 12px;
 }
 
-.green-label-label {
-    background-color: $bottegaGreen;
+.color-label {
+    background-color: $primaryColor;
     border-radius: 100px;
-    height: 26px;
     width: 26px;
+    height: 26px;
     font-size: 18px;
     text-align: center;
     color: white;
 }
 
 .generate-button {
+    background-color: $primaryColor;
     @include buttonStyles;
-    background-color: $bottegaGreen;
-
 }
 
- .button-wrapper {
- display: flex;
- flex-direction: column;
- align-items: center;
-} 
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.clear-button, a {
-    @include buttonStyles;
-    background-color: $clearBlue;
+.clear-button {
+    background-color: $secondaryColor;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.6);
     padding-top: 9px;
     text-align: center;
+    @include buttonStyles;
 }
 
 input:focus,
 button:focus {
     outline: none;
 }
-
-
-
-

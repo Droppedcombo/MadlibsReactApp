@@ -102,19 +102,19 @@ class MadLibForm extends Component {
             {placeholder: 'Celebrity', prop: 'celebrityOne', state: this.state.celebrityOne},
 
             {placeholder: 'Adjective', prop: 'adjectiveTwo', state: this.state.adjectiveTwo},
-            {placeholder: 'Noun (Plural)', prop: 'nounOne', state: this.state.nounOne},
+            {placeholder: 'Noun', prop: 'nounOne', state: this.state.nounOne},
             {placeholder: 'Number', prop: 'numberOne', state: this.state.numberOne},
             {placeholder: 'Number', prop: 'numberTwo', state: this.state.numberTwo},
           
-            {placeholder: 'Color', prop: 'color', state: this.state.color},
-            {placeholder: 'Noun (Plural)', prop: 'pluralNoun', state: this.state.pluralNoun},
-            {placeholder: 'Adjective', prop: 'adjectiveOne', state: this.state.adjectiveOne},
-            {placeholder: 'Celebrity', prop: 'celebrityOne', state: this.state.celebrityOne},
+            {placeholder: 'Noun', prop: 'nounTwo', state: this.state.nounTwo},
+            {placeholder: 'Adjective', prop: 'adjectiveThree', state: this.state.adjectiveThree},
+            {placeholder: 'Celebrity', prop: 'celebrityTwo', state: this.state.celebrityTwo},
+            {placeholder: 'Celebrity', prop: 'celebrityThree', state: this.state.celebrityThree},
 
-            {placeholder: 'Adjective', prop: 'adjectiveTwo', state: this.state.adjectiveTwo},
-            {placeholder: 'Noun (Plural)', prop: 'nounOne', state: this.state.nounOne},
-            {placeholder: 'Number', prop: 'numberOne', state: this.state.numberOne},
-            {placeholder: 'Number', prop: 'numberTwo', state: this.state.numberTwo},
+            {placeholder: 'Adjective', prop: 'adjectiveFour', state: this.state.adjectiveFour},
+            {placeholder: 'Noun', prop: 'nounThree', state: this.state.nounThree},
+            {placeholder: 'Celebrity', prop: 'celebrityFour', state: this.state.celebrityFour},
+            {placeholder: 'Adjective', prop: 'adjectiveFive', state: this.state.adjectiveFive},
            
         ]      
         
